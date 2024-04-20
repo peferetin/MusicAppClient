@@ -3,6 +3,7 @@ import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import { Card } from 'antd'
 import ReactPlayer from 'react-player'
+import Loader from './Loader.jsx'
 
 const Movie = () => {
     const { _id } = useParams()
@@ -33,7 +34,7 @@ const Movie = () => {
         fetchMovie()
     }, [])
 
-    if (loading) return <h1>Loading...</h1>
+    if (loading) return <h1>{<Loader />}</h1>
     if (error) return <h1>Error</h1>
     console.log(movie);
     return (
