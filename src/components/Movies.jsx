@@ -12,7 +12,7 @@ function Movies() {
     const [movies, setMovies] = useState('')
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(true)
-    const URL = 'https://i0.wp.com/www.michigandaily.com/wp-content/uploads/2023/10/Shawshank-photo.png?fit=1170%2C645&ssl=1'
+    // const URL = 'https://i0.wp.com/www.michigandaily.com/wp-content/uploads/2023/10/Shawshank-photo.png?fit=1170%2C645&ssl=1'
 
 
 
@@ -54,7 +54,7 @@ function Movies() {
 
                             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-6">
                                 <a href="#">
-                                    <img className="rounded-t-lg" src={URL} alt="" />
+                                    <img className="rounded-t-lg" src={`http://localhost:5001${movie.image}`} alt="" />
                                 </a>
                                 <div className="p-5">
                                     <a href="#">
