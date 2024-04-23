@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-// import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 
 
@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 
 const AddMovie = () => {
-    // let navigate = useNavigate()
+    let navigate = useNavigate()
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState('')
     const [movies, setMovies] = useState([])
@@ -56,6 +56,7 @@ const AddMovie = () => {
             setDuration('')
             setRate('')
             setGenre('')
+            navigate('/movies')
 
 
         }
@@ -72,17 +73,22 @@ const AddMovie = () => {
 
 
 
-            <h1>Add a Movie</h1>
-            <form onSubmit={addedMovie}>
+            <h1 className="mb-10 text-center bg-orange-600">Add a Movie</h1>
+            <form className="flex" onSubmit={addedMovie}>
 
                 <input type="text" placeholder='movie title' value={title} required onChange={(e) => setTitle(e.target.value)} />
-                <br />
+
                 <input type="text" placeholder='movie-genre' value={genre} required onChange={(e) => setGenre(e.target.value)} />
-                <br />
+
                 <input type="text" placeholder='movie-rate' value={rate} required onChange={(e) => setRate(e.target.value)} />
-                <br />
+
                 <input type="text" placeholder='movie-duration' value={duration} required onChange={(e) => setDuration(e.target.value)} />
-                <br />
+
+                <input type="text" placeholder='movie-year' value={year} required onChange={(e) => setYear(e.target.value)} />
+
+                {/* <input type="text" placeholder='movie-image' value={image} required onChange={(e) => setImage(e.target.value)} /> */}
+
+                <input type="text" placeholder='movie-url' value={url} required onChange={(e) => setUrl(e.target.value)} />
 
                 <input type="submit" />
             </form>

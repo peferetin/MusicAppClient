@@ -25,6 +25,7 @@ const SearchMovieByName = () => {
             setError(err)
         }
         finally {
+            setSearch('')
             setLoading(false)
 
         }

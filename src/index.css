@@ -73,7 +73,7 @@ button:focus-visible {
 @tailwind utilities;
 
 
-p{
+/* p{
   font-size: 1.5em;
   font-weight: 500;
   color: #646cff;
@@ -83,7 +83,7 @@ p{
   margin: 5px;
   background-color: #f9f9f9;
   
-}
+} */
 
 .Cards{
  background-color: rgb(221, 207, 16);
@@ -105,9 +105,12 @@ background-color: beige;
   justify-content: center;
   margin: 10px;
 padding: 20px;
-
-
 border-radius: 10px;
 
-
+}
+input{
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #0a0328;
+  margin: 5px;
 }
