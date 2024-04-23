@@ -86,7 +86,7 @@ const AddMovie = () => {
 
                 <input type="text" placeholder='movie-year' value={year} required onChange={(e) => setYear(e.target.value)} />
 
-                {/* <input type="text" placeholder='movie-image' value={image} required onChange={(e) => setImage(e.target.value)} /> */}
+                <input type="text" placeholder='movie-image' value={image} required onChange={(e) => setImage(e.target.value)} />
 
                 <input type="text" placeholder='movie-url' value={url} required onChange={(e) => setUrl(e.target.value)} />
 

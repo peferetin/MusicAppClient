@@ -14,8 +14,6 @@ const Movie = () => {
     const [loading, setLoading] = useState(true)
 
     const fetchMovie = async () => {
-
-
         try {
             const res = await axios.get(`http://localhost:5001/movies/id/${_id}`);
             console.log(res.data);
@@ -28,7 +26,6 @@ const Movie = () => {
         finally {
             setLoading(false)
         }
-
     }
     useEffect(() => {
         fetchMovie()
@@ -38,24 +35,16 @@ const Movie = () => {
     if (error) return <h1>Error</h1>
     console.log(movie);
     return (
-        <div className="w-96">
-
-
+        <div className="w-96 ">
             <div className=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-
                 <a className='w-40' href="#">
                     <ReactPlayer
                         width={370}
                         height={370}
-
-
                         url={movie.url} />
                     {/* <img className="rounded-t-lg" src={URL} alt="" /> */}
-
-
-
                 </a>
-                <div className="p-5 items-center">
+                <div className="p-5">
                     <a href="#">
                         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{movie.title}</h5>
                     </a>

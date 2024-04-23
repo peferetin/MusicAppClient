@@ -13,6 +13,7 @@ const NavBar = () => {
             <Link to='/users'>Users</Link>
             <Link to='/search'>Search</Link>
             <Link to='/addMovie'>Add a Movie</Link>
+            {/* <Link to='/deleteMovie'>Delete a Movie</Link> */}
 
 
         </div>
