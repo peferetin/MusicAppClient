@@ -39,10 +39,23 @@ input{
 p{
   font-size: 1.5em;
   font-weight: 500;
-  color: #646cff;
+  color: #010213;
   border: 2px solid #0a0328;
   border-radius: 10px;
   padding: 5px;
   margin: 5px;
  
 }
+.user-div {
+ display: flex;
+background-color: rgb(110, 168, 220);
+border-radius: 10px;
+padding: 10px;
+margin: 10px;
+justify-content: center;
+flex-direction: column;
+margin-left: 20px;
+align-items: center;
+}
+
+

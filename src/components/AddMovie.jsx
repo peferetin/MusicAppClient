@@ -10,9 +10,8 @@ import { useNavigate } from 'react-router-dom'
 
 const AddMovie = () => {
     let navigate = useNavigate()
-    const [loading, setLoading] = useState(true)
+
     const [error, setError] = useState('')
-    const [movies, setMovies] = useState([])
     const [title, setTitle] = useState('')
     const [image, setImage] = useState('')
     const [url, setUrl] = useState('')

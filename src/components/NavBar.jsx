@@ -10,9 +10,11 @@ const NavBar = () => {
             {/* <Link to='/map'>Map</Link> */}
             {/* <Link to='/addRestaurant'>Add restaurant</Link> */}
             <Link to='/movies'>Movies</Link>
-            <Link to='/users'>Users</Link>
-            <Link to='/search'>Search</Link>
             <Link to='/addMovie'>Add a Movie</Link>
+            <Link to='/users'>Users</Link>
+            <Link to='/addUser'>Add a User</Link>
+            <Link to='/search'>Search</Link>
+
 
             {/* <Link to='/deleteMovie'>Delete a Movie</Link> */}
 
