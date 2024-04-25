@@ -5,19 +5,10 @@ import { Card } from 'antd'
 import Loader from './Loader.jsx'
 
 
-
-
-
 function Movies() {
     const [movies, setMovies] = useState('')
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(true)
-    // const URL = 'https://i0.wp.com/www.michigandaily.com/wp-content/uploads/2023/10/Shawshank-photo.png?fit=1170%2C645&ssl=1'
-
-
-
-
-
 
     const fetchMovies = async () => {
         try {
@@ -54,7 +45,7 @@ function Movies() {
 
                             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-6">
                                 <a href="#">
-                                    <img className="rounded-t-lg" src={`http://localhost:5001${movie.image}`} alt="" />
+                                    <img className="rounded-t-lg " src={`http://localhost:5001/${movie.image}`} alt="" />
                                 </a>
                                 <div className="p-5">
                                     <a href="#">
@@ -73,19 +64,6 @@ function Movies() {
                                     </Link>
                                 </div>
                             </div>
-
-                            {/* 
-              <Card className='Cards' key={movie._id} title={movie.title} style={{ width: 300 }}>
-                <img src={URL} alt={movie.title} style={{ width: 200, height: 200 }} />
-
-                <p className='bg-red-900'>{movie.year}</p>
-                <p>{movie.rate}</p>
-                <p>{movie.genre}</p>
-                <p>{movie.duration}</p>
-
-
-                <Link to={`/movies/${movie._id}`}>View</Link>
-              </Card> */}
 
                         </>
 
