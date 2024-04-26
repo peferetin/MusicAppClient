@@ -14,7 +14,7 @@ const NavBar = () => {
             <Link to='/users'>Users</Link>
             <Link to='/addUser'>Add a User</Link>
             <Link to='/search'>Search</Link>
-            <Link to='/login'>Login</Link>
+            {/* <Link to='/login'>Login</Link> */}
 
 
 

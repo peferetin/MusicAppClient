@@ -52,7 +52,7 @@ const Users = () => {
                                     <Meta title={user.name} description={user.age} />
                                     <p>{user.email}</p>
                                     <p>{user.password}</p>
-                                    image: <img src={`http://localhost:5001/${user.image}`} alt="" />
+                                    image: <img src={`http://localhost:5001${user.image}`} alt="" />
 
                                 </Card>
                             </Link>
