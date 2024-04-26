@@ -9,6 +9,7 @@ import AddMovie from './components/AddMovie.jsx';
 import Users from './components/Users.jsx';
 import User from './components/User.jsx';
 import AddUser from './components/AddUser.jsx';
+import Login from './components/Login.jsx';
 
 
 // import DeleteMovie from './components/DeleteMovie.jsx';
@@ -28,6 +29,7 @@ const MovieRouterApp = () => {
         <Route path="/users" element={<Users />} />
         <Route path="/addUser" element={<AddUser />} />
         <Route path="/users/:id" element={<User />} />
+        <Route path="/login" element={<Login />} />
 
 
         {/* <Route path="/deleteMovie" element={<DeleteMovie />} /> */}
