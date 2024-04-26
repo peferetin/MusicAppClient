@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom'
 
 
@@ -46,7 +45,7 @@ const AddUser = () => {
         } catch (err) {
             console.log(err);
         } finally {
-            // old method of sending data
+            // old method of setting state
             //     setName('')
             //     setAge('')
             //     setEmail('')
