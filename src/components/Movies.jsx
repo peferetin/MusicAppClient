@@ -28,11 +28,7 @@ function Movies() {
     }, [])
     if (loading) return <h1>{<Loader />}</h1>
     if (error) return <h1>Error</h1>
-
-
-
-
-
+    console.log(movies);
     return (
         <>
             <h1 className='text-4xl text-center m-10 '>Select a Movie to Watch</h1>
