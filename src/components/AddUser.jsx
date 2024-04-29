@@ -31,7 +31,8 @@ const AddUser = () => {
         try {
             const newUser = await axios.post('http://localhost:5001/register', postUser,)
 
-            // old method of sending data
+            // old method of sending data before using FormData above
+
             // const newUser = await axios.post('http://localhost:5001/register', { 
             //     name: name,
             //     age: age,
@@ -45,7 +46,8 @@ const AddUser = () => {
         } catch (err) {
             console.log(err);
         } finally {
-            // old method of setting state
+            // old method of setting state before using FormData above
+
             //     setName('')
             //     setAge('')
             //     setEmail('')
@@ -62,7 +64,7 @@ const AddUser = () => {
     return (
         <div>
             <h1 className="mb-10 text-center bg-orange-600">Add a User </h1>
-            <form className="flex" onSubmit={(e) => addedUser(e)}>
+            <form className="flex flex-col w-full items-center" onSubmit={(e) => addedUser(e)}>
 
                 <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
                 <input type="number" placeholder="Age" value={age} onChange={(e) => setAge(e.target.value)} />
